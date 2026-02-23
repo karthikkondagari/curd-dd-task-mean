@@ -11,7 +11,7 @@ services:
       - mongo-data:/data/db
 
   backend:
-    image: karthik008/back:v1
+    image: karthik008/back:latest
     container_name: backend
     restart: always
     ports:
@@ -22,7 +22,7 @@ services:
       - mongodb
 
   frontend:
-    image: karthik008/front:v2
+    image: karthik008/front:latest
     container_name: frontend
     restart: always
     ports:
